@@ -20,6 +20,12 @@
     "dbaeumer.vscode-eslint",
     "pkief.material-icon-theme",
     "donjayamanne.githistory",
-    "eamodio.gitlens"
+    "eamodio.gitlens",
+    "smelukov.vscode-csstree",
+    "editorconfig.editorconfig",
+    "codezombiech.gitignore",
+    "kisstkondoros.vscode-gutter-preview",
+    "techer.open-in-browser",
+    "umoxfo.vscode-w3cvalidation"
   ]
 }
