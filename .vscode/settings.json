@@ -17,6 +17,5 @@
   "editor.fontFamily": "'Fira Code', 'Inconsolata', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "better-comments.highlightPlainText": true,
-  "eslint.autoFixOnSave": true,
-  "extensions.autoUpdate": true
+  "eslint.autoFixOnSave": true
 }
