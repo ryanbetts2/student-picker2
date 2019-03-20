@@ -11,6 +11,11 @@ function submitHandler(event) {
 
   const fname = document.querySelector("#fname").value;
   const lname = document.querySelector("#lname").value;
+
+  const student = {
+    fname: fname,
+    lname: lname
+  };
 }
 
 document.querySelector("form").addEventListener("submit", submitHandler);
