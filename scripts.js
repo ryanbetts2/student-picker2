@@ -5,17 +5,24 @@
  * 4. Push the new Object onto an Array
  * 5. Randomly select a 'student Object' from the Array and console.log().
  */
+const students = [];
 
-function submitHandler(event) {
-  event.preventDefault(); // Stop the browser's submission.
-
+function submitCreator() {
   const fname = document.querySelector("#fname").value;
   const lname = document.querySelector("#lname").value;
 
+  // object
   const student = {
-    fname: fname,
-    lname: lname
+    fname,
+    lname
   };
+
+  return student;
 }
 
-document.querySelector("form").addEventListener("submit", submitHandler);
+document.querySelector("form").addEventListener("submit", e => {
+  e.preventDefault();
+
+  students.push(submitCreator(fname, lname));
+  console.log(students);
+});
