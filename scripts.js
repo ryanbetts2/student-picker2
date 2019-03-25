@@ -21,6 +21,12 @@ function submitCreator(fname, lname) {
 
   return student;
 }
+// function getRandomIntInclusive(min, max) {
+// return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+
+const getRandomIntInclusive = (min, max) =>
+  Math.floor(Math.random() * (max - min + 1)) + min;
 
 document.querySelector("form").addEventListener("submit", e => {
   e.preventDefault();
@@ -29,9 +35,9 @@ document.querySelector("form").addEventListener("submit", e => {
   const lname = document.querySelector("#lname").Value;
 
   students.push(submitCreator(fname, lname));
-  console.log(students);
 });
 
 document.querySelector("button").addEventListener("click", () => {
-  console.log(students[students.length - 1]);
+  console.log(students[2]);
+  console.log(getRandomIntInclusive(1, 10));
 });
