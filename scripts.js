@@ -36,6 +36,8 @@ document.querySelector("form").addEventListener("submit", e => {
 });
 
 document.querySelector("button").addEventListener("click", () => {
-  console.log(students[2]);
-  console.log(getRandomIntInclusive(1, 10));
+  // const randomIndex = getRandomIntInclusive(0, students.length - 1);
+  // const chosen1 = students[randomIndex];
+  console.log(students[getRandomIntInclusive(0, students.length - 1)]);
+  // console.log(getRandomIntInclusive(1, 10));
 });
