@@ -9,7 +9,6 @@ const students = [
   { fname: " Will", lname: "Bts" },
   { fname: " Phil", lname: "Btts" }
 ];
-
 const studentCreator = (fname, lname) => {
   // object
   const student = {
@@ -36,11 +35,10 @@ document.querySelector("form").addEventListener("submit", e => {
 });
 
 document.querySelector("button").addEventListener("click", () => {
-  // const randomIndex = getRandomIntInclusive(0, students.length - 1);
-  // const chosen1 = students[randomIndex];
   const chosen1 = students[getRandomIntInclusive(0, students.length - 1)];
   // console.log(getRandomIntInclusive(1, 10));
 
-  const ptc = document.querySelector("p").textContent;
-  console.log(`${ptc}  ${chosen1.fname}  ${chosen1.lname}`);
+  // We use the "textContent" property as setter
+  p.textContent = `And the lucky student is:  ${chosen1.fname}  ${chosen1.lname};
+
 });
