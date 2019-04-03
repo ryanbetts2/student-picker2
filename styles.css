@@ -8,4 +8,5 @@ p {
 }
 
 .is-shown {
+  display: block;
 }

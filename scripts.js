@@ -9,6 +9,8 @@ const students = [
   { fname: " Will", lname: "Bts" },
   { fname: " Phil", lname: "Btts" }
 ];
+
+const p = document.querySelector("p");
 const studentCreator = (fname, lname) => {
   // object
   const student = {
@@ -18,9 +20,6 @@ const studentCreator = (fname, lname) => {
 
   return student;
 };
-// function getRandomIntInclusive(min, max) {
-// return Math.floor(Math.random() * (max - min + 1)) + min;
-// }
 
 const getRandomIntInclusive = (min, max) =>
   Math.floor(Math.random() * (max - min + 1)) + min;
@@ -36,9 +35,10 @@ document.querySelector("form").addEventListener("submit", e => {
 
 document.querySelector("button").addEventListener("click", () => {
   const chosen1 = students[getRandomIntInclusive(0, students.length - 1)];
-  // console.log(getRandomIntInclusive(1, 10));
 
-  // We use the "textContent" property as setter
-  p.textContent = `And the lucky student is:  ${chosen1.fname}  ${chosen1.lname};
-
+  p.textContent = `And the lucky student is:  ${chosen1.fname} ${
+    chosen1.lname
+  }`;
+  p.classList.remove("is-hidden");
+  p.classList.add("bounce");
 });
